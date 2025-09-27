@@ -9,63 +9,35 @@ body {
     background-color: #f5f8fa;
     color: #333;
     line-height: 1.6;
+    padding: 20px;
 }
 
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
-/* Header principal */
-.main-header {
-    background: linear-gradient(135deg, #2c3e50, #3498db);
-    color: white;
-    padding: 30px 0;
+.header {
     text-align: center;
-    position: relative;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e1e8ed;
+    padding-bottom: 20px;
 }
 
-.main-header h1 {
-    font-size: 2.2rem;
+.header h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.header h2 {
+    font-size: 20px;
+    color: #3498db;
     margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.main-header h2 {
-    font-size: 1.4rem;
-    opacity: 0.9;
-    margin-bottom: 25px;
-    font-weight: 400;
-}
-
-.admin-btn {
-    background: rgba(255, 255, 255, 0.15);
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    padding: 12px 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: all 0.3s;
-    backdrop-filter: blur(10px);
-}
-
-.admin-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
-}
-
-.admin-icon {
-    margin-right: 8px;
-}
-
-/* Contenido público */
-.public-content {
-    padding: 40px 0;
-    background: white;
-    min-height: 70vh;
 }
 
 .navigation {
@@ -77,65 +49,56 @@ body {
 }
 
 .nav-btn {
-    padding: 12px 20px;
+    padding: 10px 15px;
     background-color: #ecf0f1;
     border: none;
-    border-radius: 6px;
+    border-radius: 5px;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
 }
 
 .nav-btn:hover {
     background-color: #d5dbdb;
-    transform: translateY(-2px);
 }
 
 .nav-btn.active {
     background-color: #3498db;
     color: white;
-    border-color: #2980b9;
-    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
 }
 
-/* Estilos específicos del contenido de reuniones */
 .program-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-    padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 10px;
-    color: white;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #7f8c8d;
 }
 
 .program-date {
     font-weight: bold;
-    font-size: 1.3rem;
-}
-
-.bible-reference {
-    font-style: italic;
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
-
-.prayer-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    padding: 15px 20px;
-    background: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #3498db;
-}
-
-.president-info, .prayer-assignment {
     color: #2c3e50;
-    font-weight: 500;
 }
+/*
+.program-section {
+    margin-bottom: 25px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section-header {
+    background-color: #575A5D;
+    color: white;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.section-content {
+    padding: 15px;
+}
+*/
 
 /* Secciones con colores diferentes */
 .program-section {
@@ -179,7 +142,6 @@ body {
     margin-bottom: 12px;
     padding-bottom: 12px;
     border-bottom: 1px dashed #e1e8ed;
-    align-items: center;
 }
 
 .program-item:last-child {
@@ -189,419 +151,108 @@ body {
 }
 
 .item-time {
-    width: 90px;
+    width: 80px;
     font-weight: bold;
     color: #7f8c8d;
-    font-family: 'Courier New', monospace;
 }
 
 .item-number {
-    width: 35px;
+    width: 30px;
     font-weight: bold;
     color: #2c3e50;
-    text-align: center;
 }
 
 .item-title {
     flex: 1;
     font-weight: 500;
-    color: #2c3e50;
 }
 
 .item-duration {
-    width: 80px;
+    width: 70px;
     text-align: right;
     color: #7f8c8d;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 .item-participants {
-    width: 220px;
+    width: 200px;
     text-align: right;
-    font-size: 0.9rem;
+    font-size: 14px;
     color: #7f8c8d;
 }
 
 .song-item {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     align-items: center;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 8px;
-    border-left: 4px solid #3498db;
 }
 
 .song-icon {
     background-color: #3498db;
     color: white;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
+    margin-right: 10px;
     font-weight: bold;
-    font-size: 1.1rem;
 }
 
-/* Panel de administración */
-.admin-panel {
-    background: #f8f9fa;
-    min-height: 80vh;
-    padding: 30px 0;
-}
-
-.admin-header {
+.prayer-info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #e1e8ed;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e1e8ed;
+    font-size: 14px;
 }
 
-.admin-header h2 {
-    color: #2c3e50;
-    font-size: 1.8rem;
-}
-
-.admin-buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-logout {
-    background: #e74c3c;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.btn-logout:hover {
-    background: #c0392b;
-}
-
-.admin-controls {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 30px;
-}
-
-.btn-primary {
-    background: #3498db;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-weight: 500;
-}
-
-.btn-primary:hover {
-    background: #2980b9;
-    transform: translateY(-2px);
-}
-
-.btn-secondary {
-    background: #95a5a6;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-weight: 500;
-}
-
-.btn-secondary:hover {
-    background: #7f8c8d;
-    transform: translateY(-2px);
-}
-
-.meetings-list h3 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #e1e8ed;
-}
-
-.meeting-card {
-    background: white;
-    border-radius: 10px;
-    padding: 25px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    border-left: 4px solid #3498db;
-}
-
-.meeting-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.meeting-info h4 {
-    color: #2c3e50;
-    margin-bottom: 8px;
-    font-size: 1.2rem;
-}
-
-.meeting-info p {
+.president-info, .prayer-assignment {
     color: #7f8c8d;
-    font-size: 0.95rem;
-    margin-bottom: 5px;
 }
 
-.meeting-actions {
-    display: flex;
-    gap: 10px;
-}
-
-.btn-edit {
-    background: #f39c12;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-weight: 500;
-}
-
-.btn-edit:hover {
-    background: #e67e22;
-}
-
-.btn-delete {
-    background: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-weight: 500;
-}
-
-.btn-delete:hover {
-    background: #c0392b;
-}
-
-/* Modales */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-}
-
-.modal-content {
-    background-color: white;
-    margin: 5% auto;
-    padding: 30px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 500px;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.large-modal {
-    max-width: 700px;
-}
-
-.close, .close-meeting {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    transition: color 0.3s;
-}
-
-.close:hover, .close-meeting:hover {
-    color: #000;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #2c3e50;
-}
-
-.form-group input, .form-group textarea, .form-group select {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #e1e8ed;
-    border-radius: 6px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
-}
-
-.form-group input:focus, .form-group textarea:focus {
-    outline: none;
-    border-color: #3498db;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-    font-family: 'Courier New', monospace;
-    font-size: 0.9rem;
-}
-
-.form-group small {
-    color: #7f8c8d;
-    font-size: 0.85rem;
+.bible-reference {
+    font-style: italic;
+    color: #3498db;
     margin-top: 5px;
-    display: block;
 }
 
-.form-row {
-    display: flex;
-    gap: 20px;
-}
-
-.form-row .form-group {
-    flex: 1;
-}
-
-.form-actions {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
-    margin-top: 25px;
-}
-
-.message {
-    margin-top: 15px;
-    padding: 12px;
-    border-radius: 6px;
+.meeting-day {
     display: none;
-    font-weight: 500;
 }
 
-.message.error {
-    background: #ffebee;
-    color: #c62828;
-    border: 1px solid #ffcdd2;
+.meeting-day.active {
     display: block;
 }
 
-.message.success {
-    background: #e8f5e8;
-    color: #2e7d32;
-    border: 1px solid #c8e6c9;
-    display: block;
-}
-
-.empty-state {
-    text-align: center;
-    padding: 60px 40px;
-    color: #7f8c8d;
-}
-
-.empty-state h3 {
-    margin-bottom: 15px;
-    color: #95a5a6;
-}
-
-/* Footer */
-.main-footer {
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 40px;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
     .navigation {
         flex-direction: column;
     }
     
-    .admin-header {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
+    .program-item {
+        flex-wrap: wrap;
     }
     
-    .admin-buttons {
-        flex-direction: column;
+    .item-participants {
         width: 100%;
+        text-align: left;
+        margin-top: 5px;
     }
     
-    .admin-controls {
-        flex-direction: column;
-    }
-    
-    .meeting-card {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-    
-    .meeting-actions {
-        justify-content: center;
-    }
-    
-    .modal-content {
-        width: 95%;
-        margin: 10% auto;
-        padding: 20px;
-    }
-    
-    .form-row {
-        flex-direction: column;
-        gap: 0;
-    }
-    
-    .form-actions {
-        flex-direction: column;
-    }
-    
-    .program-info {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
+    .item-duration {
+        text-align: left;
+        margin-top: 5px;
     }
     
     .prayer-info {
         flex-direction: column;
         gap: 10px;
-    }
-    
-    .program-item {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    
-    .item-participants, .item-duration {
-        width: 100%;
-        text-align: left;
     }
 }
